@@ -12,6 +12,5 @@
 @import "pages/index";
 
 .container {
-  height: 85vh;
-  background-color: $light-grey;
+  min-height: 85vh;
 }

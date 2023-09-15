@@ -37,7 +37,6 @@
 }
 
 .navbar-bottom {
-  background-color: $light-grey !important;
   height: 60px;
   position: sticky;
   top: 100px; /* Adjust the value to match the height of your navbar */
@@ -50,6 +49,8 @@
   height: 200px;
   margin: -5rem auto; /* Adjust top margin to half the container height */
   border-radius: 50%;
+  border: solid 1px;
+  border-color: $prune;
   overflow: hidden;
 }
 
