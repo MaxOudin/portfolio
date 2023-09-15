@@ -23,6 +23,8 @@
 .nav-item {
   width: 150px;
   text-align: center;
+  font-size: large;
+  font-weight: 700;
 }
 
 .navbar-nav {
@@ -36,14 +38,17 @@
 
 .navbar-bottom {
   background-color: $light-grey !important;
-  height: 80px;
+  height: 60px;
+  position: sticky;
+  top: 100px; /* Adjust the value to match the height of your navbar */
+  z-index: 999;
 }
 
 .picture-container {
   position: relative;
   width: 200px;
   height: 200px;
-  margin: -80px auto;
+  margin: -20px auto; /* Adjust top margin to half the container height */
   border-radius: 50%;
   overflow: hidden;
 }

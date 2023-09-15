@@ -17,13 +17,16 @@
   </head>
 
   <body>
-      <%= render "shared/navbar" %>
-    <div class="container py-3">
-      <%= yield %>
+
+        <%= render "shared/navbar" %>
+
+    <div class="container py-5">
+        <%= yield %>
     </div>
 
     <div>
       <%= render "shared/footer" %>
     </div>
+
   </body>
 </html>
