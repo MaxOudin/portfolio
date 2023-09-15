@@ -48,7 +48,7 @@
   position: relative;
   width: 200px;
   height: 200px;
-  margin: -20px auto; /* Adjust top margin to half the container height */
+  margin: -5rem auto; /* Adjust top margin to half the container height */
   border-radius: 50%;
   overflow: hidden;
 }
@@ -68,4 +68,12 @@
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
+}
+
+.profile {
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  margin-right: 16rem;
+  padding-top: 1rem;
 }
