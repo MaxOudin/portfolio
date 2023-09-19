@@ -1,25 +1,26 @@
 <div class="navbar navbar-expand-lg navbar-light navbar-lewagon">
-  <div class="container-fluid text-color justify-content-around navbar-top">
+  <div class="container-fluid text-color justify-content-around navbar-top" style="display: block">
     <div class="d-flex">
-      <button class="d-lg-none" data-controller="toggle-menu" data-action="click->toggle-menu#toggle" data-target="toggle-menu.toggleable">
+      <button class="d-lg-none btn-info navbar-toggler"
+              data-controller="toggle-menu"
+              data-action="click->toggle-menu#toggle"
+              data-toggle-target="toggle-menu.toggleable"
+              data-toggle="collapse"
+              data-target="#navbarToggleContent">
         Menu
       </button>
     </div>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav justify-content-between toggleable">
-        <div class='d-flex flex-start'>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="/projects">Projects</a>
-          </li>
-        </div>
-        <div>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Contact</a>
-          </li>
-        </div>
+    <div class="collapse navbar-collapse" id="navbarToggleContent">
+      <ul class="navbar-nav justify-content-between toggleable" data-target="toggle-menu.toggleable">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Contact</a>
+        </li>
       </ul>
     </div>
   </div>
