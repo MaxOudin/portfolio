@@ -79,6 +79,10 @@
   padding-top: 1rem;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Custom CSS for responsive navbar */
 
 /* Adjust navbar for small screens (sm) */
@@ -91,14 +95,23 @@
     width: 100%; /* Full width for each nav item */
     text-align: center;
     font-size: medium; /* Adjust font size for small screens */
+    margin-bottom: 10px;
   }
 
   .navbar-collapse {
     justify-content: center; /* Center align nav items */
+    align-items: end;
   }
 
   .navbar-top {
     height: auto; /* Adjust height for small screens */
+    display: flex;
+    justify-content: space-between; /* Align items in a row and space them apart */
+    align-items: center; /* Vertically center items */
+  }
+
+  .navbar-top button {
+    order: 1; /* Move the button to the end of the flex container */
   }
 
   .navbar-brand img {
@@ -123,6 +136,17 @@
 
 /* Adjust navbar for large screens (lg) */
 @media (min-width: 992px) {
+  .navbar-top {
+    height: auto; /* Adjust height for small screens */
+    display: flex;
+    justify-content: space-between; /* Align items in a row and space them apart */
+    align-items: center; /* Vertically center items */
+  }
+
+  .navbar-top button {
+    display: none;
+  }
+
   .nav-item {
     width: 150px; /* Restore width for large screens */
     text-align: center;
@@ -138,17 +162,21 @@
   }
 
   .picture-overlay {
-      position: relative;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.1);
-    }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 
   .picture-container {
-    margin: auto;
     width: 200px; /* Restore the profile picture size */
     height: 200px;
+  }
+
+  .profile {
+    margin-right: 2rem; /* Adjust margin for large screens */
+    display: flex; /* Show the profile section on large screens */
   }
 }

@@ -1,10 +1,12 @@
 <div class="navbar navbar-expand-lg navbar-light navbar-lewagon">
   <div class="container-fluid text-color justify-content-around navbar-top">
-    <%# <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button> %>
+    <div class="d-flex">
+      <button class="d-lg-none" data-controller="toggle-menu" data-action="click->toggle-menu#toggle" data-target="toggle-menu.toggleable">
+        Menu
+      </button>
+    </div>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav justify-content-between">
+      <ul class="navbar-nav justify-content-between toggleable">
         <div class='d-flex flex-start'>
           <li class="nav-item">
             <a class="nav-link text-white" href="/">Home</a>
