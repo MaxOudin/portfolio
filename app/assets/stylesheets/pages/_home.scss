@@ -14,7 +14,7 @@
 
 .index-body {
   margin-top: 2rem;
-  width:70%;
+  width: 80%;
   display: flex;
   flex-direction: column;
 }
@@ -24,4 +24,14 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+@media (max-width: 576px) {
+  .index-body {
+    margin-left: 6px;
+    margin-top: 2rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
 }
