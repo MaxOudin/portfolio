@@ -25,3 +25,15 @@
 .footer .fa-heart {
   color: $prune;
 }
+
+@media (max-width: 576px) {
+  .footer {
+    height: auto;
+    padding: 6px; /* Adjust padding for smaller screens */
+  }
+
+  .footer-links a {
+    font-size: 24px; /* Adjust font size for smaller screens */
+    padding: 0px 3px; /* Adjust padding for smaller screens */
+  }
+}
