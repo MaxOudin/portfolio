@@ -9,9 +9,9 @@ export default class extends Controller {
   }
 
   toggle() {
-    console.log('target');
     this.toggleableTargets.forEach((target) => {
-      target.classList.toggle('hidden');
+      console.log(target);
+      target.classList.toggle('hidden-nav');
     });
   }
 }
