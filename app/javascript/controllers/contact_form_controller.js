@@ -10,12 +10,14 @@ export default class extends Controller {
 
   openModal() {
     console.log(this.modalTarget);
-    this.modalTarget.classList.toggle("is-active");
+    this.modalTarget.classList.remove("modal");
+    this.modalTarget.classList.add("modal-active");
     console.log("open modal");
   }
 
   closeModal() {
-    this.modalTarget.classList.remove("is-active");
+    this.modalTarget.classList.remove("modal-active");
+    this.modalTarget.classList.add("modal");
   }
 
   submit() {
