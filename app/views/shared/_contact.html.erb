@@ -1,0 +1,26 @@
+
+<div class="modal" data-contact-form-target="modal">
+  <div class="modal-content">
+    <h2>Contact Me</h2>
+    <form data-action="submit->contact-form#submit">
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control">
+          <input class="input" type="email" placeholder="Votre email" data-contact-form-target="email">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Message</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Votre message" data-contact-form-target="message"></textarea>
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+          <button type="submit" class="button is-primary">Send</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <button class="modal-close is-large" aria-label="close" data-action="click->contact-form#closeModal"></button>
+</div>
