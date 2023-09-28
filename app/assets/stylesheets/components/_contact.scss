@@ -2,7 +2,6 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
-  /* other styles */
 }
 
 .modal-active {
@@ -11,7 +10,6 @@
   transition: opacity 0.3s ease-in-out, visibility 1s;
   margin-top: 10vh;
   margin-left: 25vw;
-  /* other styles */
 }
 
 .modal-background {

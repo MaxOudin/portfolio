@@ -35,7 +35,7 @@
 .navbar-bottom {
   height: 60px;
   position: sticky;
-  top: 100px; /* Adjust the value to match the height of your navbar */
+  top: 100px;
   z-index: 999;
 }
 
@@ -43,7 +43,7 @@
   position: relative;
   width: 200px;
   height: 200px;
-  margin: -5rem auto; /* Adjust top margin to half the container height */
+  margin: -5rem auto;
   border-radius: 50%;
   border: solid 1px;
   border-color: $prune;
@@ -85,14 +85,14 @@
   }
 
   .nav-item {
-    width: 100%; /* Full width for each nav item */
+    width: 100%;
     text-align: center;
-    font-size: small; /* Adjust font size for small screens */
+    font-size: small;
     margin: auto;
   }
 
   .navbar-collapse {
-    justify-content: center; /* Center align nav items */
+    justify-content: center;
     align-items: end;
   }
 
@@ -111,27 +111,27 @@
   }
 
   .navbar-top {
-    height: 110px; /* Adjust height for small screens */
+    height: 110px;
     display: flex;
-    justify-content: space-between; /* Align items in a row and space them apart */
-    align-items: center; /* Vertically center items */
+    justify-content: space-between;
+    align-items: center;
   }
 
   .navbar-top button {
-    order: 1; /* Move the button to the end of the flex container */
+    order: 1;
   }
 
   .navbar-brand img {
-    width: 30px; /* Adjust brand image size for small screens */
+    width: 30px;
   }
 
   .profile {
-    margin-right: 1rem; /* Adjust margin for small screens */
-    display: none; /* Hide the profile section on small screens */
+    margin-right: 1rem;
+    display: none;
   }
 
   .navbar-toggler {
-    display: block; /* Ensure the toggle button is always visible */
+    display: block;
   }
 
   .collapse {
@@ -148,7 +148,7 @@
   }
 
   .picture-container {
-    width: 100px; /* Adjust the profile picture size */
+    width: 100px;
     height: 100px;
     margin: auto;
   }
@@ -178,24 +178,15 @@
   .listitem {
     display: grid !important;
   }
-
-  // .btn-info:hover{
-  //   background-color: $prune;
-  //   color: $beige;
-  //   border: solid 1px $gold;
-  //   width: 30px;
-  //   height: 20px;
-  // }
-
 }
 
 /* Adjust navbar for large screens (lg) */
 @media (min-width: 992px) {
   .navbar-top {
-    height: auto; /* Adjust height for small screens */
+    height: auto;
     display: flex;
-    justify-content: space-between; /* Align items in a row and space them apart */
-    align-items: center; /* Vertically center items */
+    justify-content: space-between;
+    align-items: center;
   }
 
   .navbar-top button {
@@ -203,17 +194,17 @@
   }
 
   .nav-item {
-    width: 150px; /* Restore width for large screens */
+    width: 150px;
     text-align: center;
-    font-size: large; /* Restore font size for large screens */
+    font-size: large;
   }
 
   .navbar-collapse {
-    justify-content: space-between; /* Restore justify-content for large screens */
+    justify-content: space-between;
   }
 
   .navbar-toggler {
-    display: none; /* Hide the toggle button for large screens */
+    display: none;
   }
 
   .picture-overlay {
@@ -226,12 +217,12 @@
   }
 
   .picture-container {
-    width: 200px; /* Restore the profile picture size */
+    width: 200px;
     height: 200px;
   }
 
   .profile {
-    margin-right: 2rem; /* Adjust margin for large screens */
-    display: flex; /* Show the profile section on large screens */
+    margin-right: 2rem;
+    display: flex;
   }
 }
