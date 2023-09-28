@@ -1,11 +1,9 @@
 <div class="navbar navbar-expand-lg navbar-light navbar-lewagon">
-  <div data-controller="contact-form"
-       class="container-fluid text-color justify-content-around navbar-top"
+  <div class="container-fluid text-color justify-content-around navbar-top"
        style="display: block">
     <div class="d-flex justify-content-start">
       <button class="d-lg-none btn-info navbar-toggler"
-              data-action="click->toggle-menu#toggle"
-              >
+              data-action="click->toggle-menu#toggle">
         Menu
       </button>
     </div>
@@ -22,7 +20,7 @@
         </div>
         <div>
           <li class="nav-item">
-            <%= link_to "Contact", "#", class: "nav-link text-white px-2 py-1", data: { action: "click->contact-form#openModal", contact_form_target: "modal" } %>
+            <%= link_to "Contact", "#", class: "nav-link text-white px-2 py-1"%>
           </li>
         </div>
       </ul>
@@ -41,5 +39,3 @@
     </div>
   </div>
 </div>
-
-    <%= render "shared/contact" %>

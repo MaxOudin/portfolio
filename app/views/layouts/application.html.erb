@@ -20,10 +20,16 @@
 
     <%= render "shared/navbar" %>
 
-    <div class="container py-5">
+    <div class="container py-5"
+         data-controller="contact-form">
+    <div class="btn btn-primary btn-contact"
+         data-action="click->contact-form#openModal">
+         Contact me</div>
+
+        <%= yield %>
 
     <%= render "shared/contact" %>
-        <%= yield %>
+
     </div>
 
     <div>

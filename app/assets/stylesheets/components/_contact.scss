@@ -1,16 +1,14 @@
-.modal {
+.modal-hid {
+  display: none;
+}
 
-  position: fixed;
+.modal {
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  transition: visibility 0s, opacity 0.3s linear;
-  z-index: 10;
 }
 
 .modal.is-active {
   visibility: visible;
-  opacity: 1;
 }
 
 .modal-background {
