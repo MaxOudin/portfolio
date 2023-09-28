@@ -20,12 +20,12 @@
 
     <%= render "shared/navbar" %>
 
-    <div class="container py-5"
+    <div class="container pt-5 pb-2"
          data-controller="contact-form">
 
         <%= yield %>
 
-      <div class="d-flex justify-content-around my-3 mb-3">
+      <div class="d-flex justify-content-around my-1 mb-3">
         <div id="btn-contact" class="btn btn-primary"
             data-action="click->contact-form#openModal"
             data-contact-form-target="contactButton">
