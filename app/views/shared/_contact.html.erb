@@ -1,23 +1,29 @@
 
 <div class="modal" data-contact-form-target="modal">
   <div class="modal-content">
-    <h2>Contact Me</h2>
+    <h2>Contact Maxime</h2>
+    <p><i class="fa-solid fa-phone-flip mt-3"></i> 06 64 71 04 83</p>
+    <p><i class="fa-regular fa-envelope"></i> Send me message via form below:</p>
     <form data-action="submit->contact-form#submit">
       <div class="field">
         <label class="label">Email</label>
         <div class="control">
-          <input class="input" type="email" placeholder="Votre email" data-contact-form-target="email">
+          <input class="input" type="email" placeholder="Please indicate your email"
+                 data-contact-form-target="email"
+                 style="width: -webkit-fill-available;">
         </div>
       </div>
-      <div class="field">
+      <div class="field my-3">
         <label class="label">Message</label>
         <div class="control">
-          <textarea class="textarea" placeholder="Votre message" data-contact-form-target="message"></textarea>
+          <textarea class="textarea" placeholder="Write your message to Maxime"
+                    data-contact-form-target="message"
+                    style="width: -webkit-fill-available; height: 100px"></textarea>
         </div>
       </div>
-      <div class="field">
+      <div class="field d-flex justify-content-end my-2">
         <div class="control">
-          <button type="submit" class="button is-primary">Send</button>
+          <button type="submit" class="btn-submit">Send</button>
         </div>
       </div>
     </form>

@@ -22,14 +22,17 @@
 
     <div class="container py-5"
          data-controller="contact-form">
-    <div class="btn btn-primary btn-contact"
-         data-action="click->contact-form#openModal">
-         Contact me</div>
 
         <%= yield %>
 
-    <%= render "shared/contact" %>
-
+      <div class="d-flex justify-content-around my-3 mb-3">
+        <div id="btn-contact" class="btn btn-primary"
+            data-action="click->contact-form#openModal"
+            data-contact-form-target="contactButton">
+            Contact me
+        </div>
+        <%= render "shared/contact" %>
+      </div>
     </div>
 
     <div>

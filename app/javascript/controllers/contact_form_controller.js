@@ -2,22 +2,23 @@
 import { Controller } from "@hotwired/stimulus";
 
 export default class extends Controller {
-  static targets = ["modal", "email", "message"];
+  static targets = ["modal", "email", "message", "contactButton"];
 
   connect() {
     console.log("hello contact");
   }
 
   openModal() {
-    console.log(this.modalTarget);
     this.modalTarget.classList.remove("modal");
     this.modalTarget.classList.add("modal-active");
+    this.toggleContactButtonVisibility();
     console.log("open modal");
   }
 
   closeModal() {
     this.modalTarget.classList.remove("modal-active");
     this.modalTarget.classList.add("modal");
+    this.toggleContactButtonVisibility();
   }
 
   submit() {
@@ -32,7 +33,13 @@ export default class extends Controller {
     this.emailTarget.value = "";
     this.messageTarget.value = "";
 
+    this.toggleContactButtonVisibility();
+
     // Fermer la modal
     this.closeModal();
+  }
+
+  toggleContactButtonVisibility() {
+    this.contactButtonTarget.classList.toggle("btn-contact-hidden");
   }
 }
