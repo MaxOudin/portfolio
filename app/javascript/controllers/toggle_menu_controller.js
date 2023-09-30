@@ -5,10 +5,11 @@ export default class extends Controller {
   static targets = ['toggleable'];
 
   connect() {
-    console.log('hello');
+    console.log('hello toggle');
   }
 
   toggle() {
+    console.log(("toggle"));
     this.toggleableTargets.forEach((target) => {
       console.log(target);
       target.classList.toggle('hidden-nav');
