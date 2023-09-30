@@ -61,3 +61,23 @@
   border: solid 1px $gold;
   color: $gold;
 }
+
+/* Custom CSS for responsive contact form */
+
+/* Adjust navbar for small screens (sm) */
+@media (max-width: 576px) {
+  .modal-active {
+    margin-left: 2vw;
+  }
+
+  .modal-content{
+    min-width: 200px;
+    max-width: 400px;
+    padding: 10px;
+  }
+
+  .btn-submit:hover {
+    border: solid 1px $gold;
+    color: $gold;
+  }
+}
