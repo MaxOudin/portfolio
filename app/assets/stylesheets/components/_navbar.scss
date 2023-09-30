@@ -80,15 +80,15 @@
 
 /* Adjust navbar for small screens (sm) */
 @media (max-width: 576px) {
-  .navbar.a {
-    color: $light;
-  }
-
   .nav-item {
     width: 100%;
     text-align: center;
     font-size: small;
     margin: auto;
+  }
+
+  .container-fluid {
+    margin-top: 0px !important;
   }
 
   .navbar-collapse {
@@ -101,13 +101,6 @@
     border-radius: 3px;
     margin-right: 16px;
     font-size: small;
-  }
-
-  .nav-link:hover {
-    background-color: $beige;
-    color: $prune;
-    border: 1px solid $prune;
-    border-radius: 3px;
   }
 
   .navbar-top {
@@ -166,7 +159,7 @@
 
   .navbar-nav {
     margin-top: -24px;
-    width: 100vw;
+    width: 90vw;
     display: flex;
     align-items: flex-end;
   }
