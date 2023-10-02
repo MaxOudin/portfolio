@@ -4,29 +4,27 @@
     <h2>Contact Maxime</h2>
     <p><i class="fa-solid fa-phone-flip mt-3"></i> 06 64 71 04 83</p>
     <p><i class="fa-regular fa-envelope"></i> Send me message via the form below:</p>
-    <form data-action="submit->contact-form#submit">
-      <div class="field">
-        <label class="label">Email</label>
-        <div class="control">
-          <input class="input" type="email" placeholder="Please indicate your email"
-                 data-contact-form-target="email"
-                 style="width: -webkit-fill-available;">
-        </div>
+    <%= form_for @contact, url: contacts_path, html: { method: :post }, remote: true do |f| %>
+    <div class="field">
+      <%= f.label :email, class: 'label' %>
+      <div class="control">
+        <%= f.email_field :email, class: 'input', placeholder: 'Please indicate your email address', style: 'width: -webkit-fill-available;' %>
       </div>
-      <div class="field my-3">
-        <label class="label">Message</label>
-        <div class="control">
-          <textarea class="textarea" placeholder="Write your message to Maxime"
-                    data-contact-form-target="message"
-                    style="width: -webkit-fill-available; height: 100px"></textarea>
-        </div>
+    </div>
+
+    <div class="field my-3">
+      <%= f.label :message, class: 'label' %>
+      <div class="control">
+        <%= f.text_area :message, class: 'textarea', placeholder: 'Write your message to Maxime', style: 'width: -webkit-fill-available; height: 100px' %>
       </div>
-      <div class="field d-flex justify-content-end my-2">
-        <div class="control">
-          <button id="btn-submit" type="submit" class="btn-submit">Send</button>
-        </div>
+    </div>
+
+    <div class="field d-flex justify-content-end my-2">
+      <div class="control">
+        <%= f.submit 'Send', class: 'btn-submit', id: 'btn-submit', type: :submit %>
       </div>
-    </form>
+    </div>
+  <% end %>
   </div>
   <button class="modal-close is-large" aria-label="close" data-action="click->contact-form#closeModal">
   <i class="fa-regular fa-circle-xmark"></i></button>
