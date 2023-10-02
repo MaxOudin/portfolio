@@ -4,27 +4,33 @@
     <h2>Contact Maxime</h2>
     <p><i class="fa-solid fa-phone-flip mt-3"></i> 06 64 71 04 83</p>
     <p><i class="fa-regular fa-envelope"></i> Send me message via the form below:</p>
-    <%= form_for @contact, url: contacts_path, html: { method: :post }, remote: true do |f| %>
-    <div class="field">
-      <%= f.label :email, class: 'label' %>
-      <div class="control">
-        <%= f.email_field :email, class: 'input', placeholder: 'Please indicate your email address', style: 'width: -webkit-fill-available;' %>
-      </div>
-    </div>
 
-    <div class="field my-3">
-      <%= f.label :message, class: 'label' %>
+    <form
+      action="https://formspree.io/f/mgejpzwy"
+      method="POST"
+    >
       <div class="control">
-        <%= f.text_area :message, class: 'textarea', placeholder: 'Write your message to Maxime', style: 'width: -webkit-fill-available; height: 100px' %>
+        <label>
+          Your email:
+          <input type="email" name="email" style="width: -webkit-fill-available">
+        </label>
       </div>
-    </div>
+      <div class="control">
+        <label>
+          Your message:
+          <textarea name="message" style="width: -webkit-fill-available; height: 100px"></textarea>
+        </label>
+      </div>
 
-    <div class="field d-flex justify-content-end my-2">
-      <div class="control">
-        <%= f.submit 'Send', class: 'btn-submit', id: 'btn-submit', type: :submit %>
+      <div class="field d-flex justify-content-end my-2">
+        <div class="control">
+          <button type="submit" class="btn-submit" id="btn-submit">Send</button>
+        </div>
       </div>
-    </div>
-  <% end %>
+      <button class="modal-close is-large" aria-label="close" data-action="click->contact-form#closeModal">
+      <i class="fa-regular fa-circle-xmark"></i></button>
+    </form>
+
   </div>
   <button class="modal-close is-large" aria-label="close" data-action="click->contact-form#closeModal">
   <i class="fa-regular fa-circle-xmark"></i></button>

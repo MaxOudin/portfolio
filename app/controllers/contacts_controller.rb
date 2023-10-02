@@ -1,4 +1,5 @@
 class ContactsController < ApplicationController
+  require 'mail_form'
   def create
     email = contact_params[:email]
     message = contact_params[:message]
@@ -11,10 +12,8 @@ class ContactsController < ApplicationController
     @contact = Contact.new(email: email, message: message)
 
     begin
-      @contact.save!  # Save to the database
-
-      # Send the contact email
-      ContactMailer.send_contact_email(email, message).deliver_now
+      @contact.save! # Save to the database
+      @contact.deliver # Send email
 
       render json: { message: 'Email sent successfully' }, status: :ok
       flash[:success] = "Your email has been sent successfully !"
