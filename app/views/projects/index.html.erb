@@ -8,4 +8,14 @@
     Projects are coming soon - do not hesitate to contact me to work together or if you have any suggestions
     </p>
   </div>
+    <% @projects.each do |project| %>
+  <div>
+    <h3><%= project.title %></h3>
+    <p><%= project.description %></p>
+    <a href=<%= project.ghrepo %> target="_blank"><i class="fab fa-github"></i></a>
+    <% project.photo_urls.each do |photo| %>
+    <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+    <% end %>
+  <% end %>
+  </div>
 </div>
