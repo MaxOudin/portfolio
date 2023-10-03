@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+surf = Project.new(
+  title: 'Surf Ai',
+  description: 'Plateforme de mise en relation pour location de planches de surf',
+  date: 'August 2023',
+  ghrepo: 'https://github.com/MaxOudin/surf-ai',
+  tool: 'Ruby On Rails, JavaScript, Devise, Mapbox, Flatpickr'
+)
