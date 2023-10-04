@@ -37,7 +37,7 @@ puts 'Project "Surf Ai" created with images.'
 
 surviv = Project.new(
   title: 'Surviv.Ai',
-  description: "Surviv.ai is a revolutionary invoicing and payment management app that transforms unpaid invoices into cash effortlessly. It's designed for startups, SMEs, and professionals grappling with delayed payments, a common problem in French business landscape. By intervening early in the invoicing process, it streamlines operations, allowing users to upload PDF invoices for automated extraction of crucial details. This includes efficient tracking and management of invoices, even through email attachments. Surviv.ai prioritizes an exceptional user experience, freeing up time for business growth while ensuring healthy cash flow. Experience the future of invoice management with Surviv.ai. A video was done and will be uploaded as soon as it is available",
+  description: "Surviv.ai is a revolutionary invoicing and payment management app that transforms unpaid invoices into cash effortlessly. It's designed for startups, SMEs, and professionals grappling with delayed payments, a common problem in French business landscape. By intervening early in the invoicing process, it streamlines operations, allowing users to upload PDF invoices for automated extraction of crucial details. This includes efficient tracking and management of invoices, even through email attachments. Surviv.ai prioritizes an exceptional user experience, freeing up time for business growth while ensuring healthy cash flow.",
   date: '2023-09-08',
   ghrepo: 'https://github.com/MaxOudin/-surviv-ai',
   tool: 'Ruby, Rails, JavaScript, Stimulus, Redis, Zapier, Mindee API, SQL, Flatpickr, Bootstrap, Devise, Github, Heroku, Trello, Slack'
