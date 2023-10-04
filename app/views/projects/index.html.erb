@@ -1,21 +1,22 @@
 <div>
   <div class="projects-title">
-  <h2> My web projects</h2>
+    <h2>My web projects</h2>
   </div>
 
   <div class="projects-body">
     <p>
-    Projects are coming soon - do not hesitate to contact me to work together or if you have any suggestions
+      Projects are coming soon - do not hesitate to contact me to work together or if you have any suggestions
     </p>
   </div>
-    <% @projects.each do |project| %>
+
   <div>
-    <h3><%= project.title %></h3>
-    <p><%= project.description %></p>
-    <a href=<%= project.ghrepo %> target="_blank"><i class="fab fa-github"></i></a>
-    <% project.photo_urls.each do |photo| %>
-    <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+    <% @projects.each do |project| %>
+      <h3><%= project.title %></h3>
+      <p><%= project.description %></p>
+      <a href="<%= project.ghrepo %>" target="_blank"><i class="fab fa-github"></i></a>
+      <% project.photos.each do |photo| %>
+        <%= image_tag url_for(photo), height: 300, width: 400, alt: "Project website screenshot" %>
+      <% end %>
     <% end %>
-  <% end %>
   </div>
 </div>
