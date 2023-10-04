@@ -12,11 +12,11 @@ Project.destroy_all
 puts 'Former projects deleted.'
 
 surf = Project.new(
-  title: 'Surf Ai',
-  description: 'Plateforme de mise en relation pour location de planches de surf',
-  date: 'August 2023',
+  title: 'Surf.Ai',
+  description: "Surf.Ai is a user-friendly platform revolutionizing surfboard rentals. It connects surf enthusiasts, allowing easy searches by type and location, with detailed descriptions and pricing. Renters can review previous customer ratings, ensuring informed choices. The intuitive booking process lets users reserve surfboards for specific dates. SurfSpot offers a recap of bookings and a centralized hub for managing reservations, fostering community engagement through post-rental ratings and reviews, enhancing the surfing experience.",
+  date: '2023-08-20',
   ghrepo: 'https://github.com/MaxOudin/surf-ai',
-  tool: 'Ruby On Rails, JavaScript, Devise, Mapbox, Flatpickr'
+  tool: 'Ruby, Rails, JavaScript, Stimulus, Mapbox, Cloudinary, Flatpickr, Bootstrap, Devise, Star-rating, Tom Select, Heroku, Trello, Slack'
 )
 
 photo_urls = [
