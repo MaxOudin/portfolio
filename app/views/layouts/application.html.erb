@@ -15,11 +15,11 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
     <%# redirect to HTTPS %>
-      <script type="text/javascript">
+      <%# <script type="text/javascript">
       if (window.location.protocol !== "https:") {
         window.location.protocol = "https";
       }
-      </script>
+      </script> %>
   </head>
 
   <body>
@@ -32,7 +32,7 @@
         <%= render "shared/contact" %>
         <%= yield %>
 
-      <div class="d-flex justify-content-around my-1 mb-3">
+      <div class="modal-contact d-flex justify-content-around my-1 mb-3">
         <div id="btn-contact" class="btn btn-primary"
             data-action="click->contact-form#openModal"
             data-contact-form-target="contactButton">
