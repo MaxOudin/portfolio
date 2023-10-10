@@ -17,7 +17,6 @@
 }
 
 .carousel {
-  z-index: -1;
   position: relative;
   flex: 0 0 auto;
   width: 65%;
@@ -29,10 +28,23 @@
   height: 100%;
 }
 
+.carousel-inner {
+  z-index: 0;
+}
+
 .carousel-inner img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+
+.carousel-control-prev {
+  opacity: 0.8 !important;
+}
+
+.carousel-control-next {
+  opacity: 0.8 !important;
 }
 
 @media (max-width: 576px) {

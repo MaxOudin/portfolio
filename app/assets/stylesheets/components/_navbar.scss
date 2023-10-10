@@ -5,6 +5,7 @@
   top: 0;
   height: 100px;
   background-color: $dark-grey;
+  z-index: 100;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -36,7 +37,7 @@
   height: 60px;
   position: sticky;
   top: 100px;
-  z-index: 999;
+  z-index: 100;
 }
 
 .picture-container {
