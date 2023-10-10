@@ -67,8 +67,10 @@
 /* Adjust navbar for small screens (sm) */
 @media (max-width: 576px) {
   .modal-active {
-    margin-left: 1vw;
-    margin-right: 1vw;
+    min-width: max-content;
+    top: 50%;
+    left: 69%;
+    transform: translate(-100%, -50%);
   }
 
   .modal-content{
