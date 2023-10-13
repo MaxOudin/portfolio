@@ -26,7 +26,7 @@ photo_urls = [
   "https://res.cloudinary.com/dyleaesxc/image/upload/v1696418999/Capture_d_e%CC%81cran_2023-10-03_a%CC%80_14.34.18_kfmcly.png",
 ]
 
-surf.save!
+surviv.save!
 
 photo_urls.each do |url|
   file = URI.open(url)
