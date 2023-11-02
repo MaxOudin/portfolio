@@ -14,7 +14,7 @@ surviv = Project.new(
   title: 'Surviv.Ai',
   description: "Surviv.ai is a revolutionary invoicing and payment management app that transforms unpaid invoices into cash effortlessly. It's designed for startups, SMEs, and professionals grappling with delayed payments, a common problem in French business landscape. By intervening early in the invoicing process, it streamlines operations, allowing users to upload PDF invoices for automated extraction of crucial details. This includes efficient tracking and management of invoices, even through email attachments. Surviv.ai prioritizes an exceptional user experience, freeing up time for business growth while ensuring healthy cash flow.",
   date: '2023-09-08',
-  ghrepo: 'https://github.com/MaxOudin/-surviv-ai',
+  ghrepo: 'https://github.com/MaxOudin/-surviv-ai#readme',
   tool: 'Ruby, Rails, JavaScript, Stimulus, Redis, Zapier, Mindee API, SQL, Flatpickr, Bootstrap, Devise, Github, Heroku, Trello, Slack'
 )
 
@@ -41,7 +41,7 @@ surf = Project.new(
   title: 'Surf.Ai',
   description: "Surf.Ai is a user-friendly platform revolutionizing surfboard rentals. It connects surf enthusiasts, allowing easy searches by type and location, with detailed descriptions and pricing. Renters can review previous customer ratings, ensuring informed choices. The intuitive booking process lets users reserve surfboards for specific dates. SurfSpot offers a recap of bookings and a centralized hub for managing reservations, fostering community engagement through post-rental ratings and reviews, enhancing the surfing experience.",
   date: '2023-08-20',
-  ghrepo: 'https://github.com/MaxOudin/surf-ai',
+  ghrepo: 'https://github.com/MaxOudin/surf-ai#readme',
   tool: 'Ruby, Rails, JavaScript, Stimulus, Mapbox, Cloudinary, SQL, Flatpickr, Bootstrap, Devise, Star-rating, Tom Select, Github, Heroku, Trello, Slack'
 )
 
